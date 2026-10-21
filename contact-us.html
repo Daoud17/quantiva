@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Quantiva</title>
+    <meta name="description" content="Contact Quantiva in Lebanon for inquiries and information.">
+
+    <link rel="icon" type="image/jpeg" href="assets/img/quantiva-logo.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="header-logo" aria-label="Quantiva Home">
+                <img src="assets/img/quantiva-logo.jpeg" alt="Quantiva Logo">
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="research.html">Research</a>
+                <a href="contact-us.html" class="active" aria-current="page">Contact Us</a>
+            </nav>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="menu-overlay"></div>
+
+    <!-- MOBILE SIDEBAR -->
+    <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true" inert>
+
+        <div class="mobile-menu-header">
+            <a href="index.html" class="mobile-logo" aria-label="Quantiva Home">
+                <img src="assets/img/quantiva-logo.jpeg" alt="Quantiva Logo">
+            </a>
+
+            <button class="menu-close" type="button" aria-label="Close navigation menu">&times;</button>
+        </div>
+
+        <nav class="mobile-nav" aria-label="Mobile menu links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="research.html">Research</a>
+            <a href="contact-us.html" class="active" aria-current="page">Contact Us</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================================
+     CONTACT US PAGE
+========================================= -->
+
+    <main>
+
+        <section class="contact-section" id="contact">
+
+            <div class="contact-container">
+
+                <!-- LEFT SIDE -->
+                <div class="contact-intro">
+
+                    <h1>Get in touch</h1>
+
+                    <p>
+                        Reach out to us here for general
+                        inquiries
+                    </p>
+
+                </div>
+
+                <!-- RIGHT SIDE: FORM -->
+                <div class="contact-form-wrapper">
+
+                    <form id="quantivaContactForm" class="contact-form">
+
+                        <!-- SUPPORT CATEGORY -->
+                        <div class="contact-field full-width">
+                            <select name="category" id="contactCategory" aria-label="Choose a category for support"
+                                required>
+
+                                <option value="" selected disabled>
+                                    Choose a category for support*
+                                </option>
+
+                                <option value="General">General</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Product">Product</option>
+                                <option value="Media">Media</option>
+                                <option value="Careers">Careers</option>
+
+                            </select>
+                        </div>
+
+                        <!-- FIRST NAME -->
+                        <div class="contact-field">
+                            <input type="text" name="firstName" placeholder="First Name*" autocomplete="given-name"
+                                maxlength="100" required>
+                        </div>
+
+                        <!-- LAST NAME -->
+                        <div class="contact-field">
+                            <input type="text" name="lastName" placeholder="Last Name*" autocomplete="family-name"
+                                maxlength="100" required>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="contact-field">
+                            <input type="email" name="email" placeholder="Email*" autocomplete="email" maxlength="254"
+                                required>
+                        </div>
+
+                        <!-- LEBANON PHONE NUMBER -->
+                        <div class="contact-field phone-field">
+
+                            <div class="phone-code">
+                                <span>LB</span>
+                                <span class="phone-prefix">+961</span>
+                            </div>
+
+                            <input type="tel" id="contactPhone" name="phone" placeholder="Phone Number*" inputmode="tel"
+                                autocomplete="tel-national" pattern="0?[0-9]{7,8}"
+                                title="Enter a valid Lebanese phone number, such as 76898831 or 01723456" maxlength="9"
+                                required>
+
+                        </div>
+
+                        <!-- MESSAGE -->
+                        <div class="contact-field full-width">
+                            <textarea name="message" placeholder="Message*" rows="5" maxlength="5000"
+                                required></textarea>
+                        </div>
+
+                        <!-- SUBMIT BUTTON -->
+                        <div class="contact-submit full-width">
+
+                            <button type="submit" class="contact-submit-btn">
+                                SUBMIT
+                            </button>
+
+                        </div>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div id="contactSuccessMessage" class="contact-success-message full-width" role="status"
+                            aria-live="polite" hidden>
+
+                            Thank you! Your message has been submitted successfully.
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <a href="index.html" aria-label="Quantiva Home">
+                    <img src="assets/img/quantiva-logo.jpeg" alt="Quantiva Logo">
+                </a>
+            </div>
+
+            <div class="footer-address">
+                <h3>Address</h3>
+                <p>Lebanon<br>Address details coming soon</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <a href="mailto:info@quantivalb.com">info@quantivalb.com</a>
+                <a href="tel:+96176898831">+961 76 898 831</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
